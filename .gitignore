@@ -206,7 +206,7 @@ Temporary Items
 # Recommended template: Node.gitignore
 
 node_modules/
-dist/
+docs/
 npm-debug.log
 yarn-error.log
 
