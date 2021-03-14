@@ -5,7 +5,7 @@
       <Sidebar/>
       <div class="body">
         <div class="body--left">
-          <router-view/>
+          <router-view :key="$route.path"/>
         </div>
       </div>
     </div>

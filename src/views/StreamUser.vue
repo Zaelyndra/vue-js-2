@@ -1,7 +1,7 @@
 <template>
   <div class="streamer">
     <div class="streamer__heading">
-      <h1>{{ this.streamTitle }}</h1>
+      <h1>{{ this.streamTitle }} <span style="color: red">( RECHARGEZ LA PAGE ET LE STREAM APPARAITRA)</span></h1>
     </div>
 
     <div id="twitch-embed"></div>
@@ -26,8 +26,7 @@ export default {
       gameId: 0,
       gameName: '',
       streamTitle: '',
-      streamerViewerCount: 0
-
+      streamerViewerCount: 0,
     }
   },
   methods: {
@@ -52,8 +51,6 @@ export default {
         height: 480,
         channel: this.streamerName,
         style: "height: 1000px",
-        // only needed if your site is also embedded on embed.example.com and othersite.example.com
-        parent: ["embed.example.com", "othersite.example.com"]
       });
 
 
@@ -66,7 +63,7 @@ export default {
   mounted() {
     this.fetchBroadCastByUserId();
     this.insertTwitchEmbedScript();
-    setTimeout(() => this.runTwitchEmbed(), 500)
+    setTimeout(() => this.runTwitchEmbed(), 3000)
   }
 }
 
@@ -87,6 +84,7 @@ export default {
       margin: 0;
       padding-bottom: 5rem;
       padding-top: 2em;
+      line-height: 3rem;
     }
   }
 }
