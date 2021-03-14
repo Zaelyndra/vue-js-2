@@ -1,7 +1,7 @@
 <template>
   <div class="streamer">
     <div class="streamer__heading">
-      <h1>{{ this.streamTitle }} <span style="color: red">( RECHARGEZ LA PAGE ET LE STREAM APPARAITRA)</span></h1>
+      <h1>{{ this.streamTitle }}</h1>
     </div>
 
     <div id="twitch-embed"></div>
