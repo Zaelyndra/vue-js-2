@@ -49,7 +49,6 @@ export default {
           thumbnail_url: data.data[key].thumbnail_url,
         })
       }
-      console.log(data)
       this.listTopStream = [...this.listTopStream, ...dataListOfTop];
     },
   },

@@ -26,9 +26,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Tuto utilisé
 
-Medium :
-https://nabendu82.medium.com/create-a-twitch-clone-using-react-7-be3d116acffe
-
 Streaming twitch:
 https://dev.twitch.tv/docs/embed/everything
 Google et youtube sont vos meilleurs amis afin de trouver des solutions à vos

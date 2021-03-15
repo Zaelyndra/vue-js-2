@@ -22,7 +22,7 @@ export default {
     h1: String,
     getTop: Function
   },
-  components: { Game},
+  components: {Game},
   data: function () {
     return {
       listOfTop: [],
@@ -31,8 +31,7 @@ export default {
   },
   methods: {
     async fetchTop() {
-      //const {data} = await GameRepository.getTopGame(30);
-      const {data}  = await this.getTop;
+      const {data} = await this.getTop;
 
       let dataListOfTop = [];
       for (const key in data.data) {
